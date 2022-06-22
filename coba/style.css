@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    background: #FF8E00;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    background: #F8B400;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .home {
+        position: relative;
+        height: 100vh;
+        margin: 0 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        padding: 100px 0 0 0;
+    }
+
+    .detel2 img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1100px) {
+    .checkbtn {
+        display: block;
+        margin: 25px 40px;
+        line-height: 30px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background: #F76E11;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s all;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #FFBC80;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    padding: 30px 0 0 0;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+}
+
+.detel2 img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 350px;   
+}
+
+span{
+    color: #FF8E00;
+}
+
+.tentang-saya {
+    position: relative;
+    height: 100%;
+    margin: 0 5%;
+}
+
+.riwayat-pendidikan, 
+.riwayat-organisasi {
+    position: relative;
+    height: 100%;
+    margin: 0 5%;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Popins', sans-serif;
+    padding: 100px 0 20px 0;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.skills {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+    margin: 0 5%;
+    position: relative;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #202020;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.title2 {
+    margin: 0 0 26px 0;
+}
+.skills .box {
+    margin: 16px 0 0 0;
+}
+
+#RiwayatOrganisasi ul li .icon{
+    color: black;
+}
+
+#RiwayatOrganisasi ul li .text{
+    color: black;
+}
+
+small {
+    color: #383838;
+}
+
+.list {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.list-content {
+    margin: 0 0 0 14px;
+}
+
+#RiwayatOrganisasi {
+    height: 100vh;
+    margin: 0 5%;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+#RiwayatOrganisasi ul li {
+    display: flex;
+    gap: 0 14px;
+    margin: 12px 0;
+}
+
+#Kontak {
+    padding: 40px 0 0 0;
+    height: 90vh;
+    position: relative;
+    margin: 0 5%;
+}
+
+#Kontak h3 {
+    padding: 0;
+}
+
+a .list {
+    color: #000000;
+}
